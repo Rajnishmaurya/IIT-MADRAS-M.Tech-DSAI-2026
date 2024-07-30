@@ -1,0 +1,49 @@
+GIT
+
+git --version                   -> to know the version
+git init                        -> to initialize the git
+git status                      -> to know the status
+rm -rf .git                     -> to remove the .git file
+git init - b main             
+git add file_name               -> to move the file from working directory to stagged area
+git log                         -> to know the history
+git commit -m "message"         -> to move the file from stagged area to commit area 
+git commit -a -m "message"      -> if you want to move the file directly from working area to commit area 
+git diff                        -> to know what changes you have made
+git rm --cached file_name       -> to delete the file from git
+git push origin main            -> to push the code from working directly to commit area
+git remote -v
+
+
+git tag                        -> to see all the tag
+git tag -a v1.0 -m "messase"   -> to create a new tag having message 
+git show tag_name              -> to see all the tag_name
+git push origin tag_name       -> to push the tag from working directory to commit area
+
+
+
+BRANCH
+
+git checkout -b branchname    -> to create a new BRANCH
+git branchname                -> to see all the branchname
+git branch                    -> to check in which branch you are working
+git switch branchname         -> switch to branchname
+git branch --all
+git switch -                  -> switch to previous branch
+git branch -d branchname      -> to delete the branchname
+
+
+
+MERGE
+
+git merge branchname        -> to merge the two branch  (it merge the branchname to the working branch)
+git pull origin main        -> if you want to merge two branch then first you have to pull that branch and then merge it
+
+echo "# IIT-MADRAS-M.Tech-DSAI2026" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/Rajnishmaurya/IIT-MADRAS-M.Tech-DSAI2026.git
+git push -u origin main
+
